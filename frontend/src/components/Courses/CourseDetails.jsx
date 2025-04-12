@@ -30,12 +30,15 @@ const CourseDetails = () => {
   }, [id]);
 
   const handleEnroll = async () => {
+    console.log('enfi')
     setLoading(true);
     try {
       const response = await enroll(id);
+      console.log(response)
       toast.success(response?.data?.message || "Enrolled successfully!");
       setIsEnrolled(true);
     } catch (error) {
+      console.log('dsfkaslfk', error)
       toast.error(error.response?.data?.message || "Enrollment failed");
     } finally {
       setLoading(false);
