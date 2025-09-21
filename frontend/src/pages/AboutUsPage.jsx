@@ -67,7 +67,7 @@ const AboutUsPage = () => {
                   <h3 className="text-2xl font-bold text-green-700">Syed Nazib Sadi</h3>
                   <p className="text-sm text-gray-500 mb-2">Developer</p>
                   <p className="text-gray-700 mt-3 italic text-base">
-                    "Bringing designs to life and people together — pixel by pixel, post by post."
+                    "Building intelligent discussion platforms — combining scalable backend systems with AI moderation"
                   </p>
                 </div>
               </div>

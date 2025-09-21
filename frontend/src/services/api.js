@@ -33,7 +33,7 @@ API.interceptors.response.use(
 			}
 
 			try {
-				const res = await axios.post("http://127.0.0.1:8000/token/refresh/", {
+				const res = await axios.post("https://seagull-5adu.onrender.com/token/refresh/", {
 					refresh: refreshToken,
 				});
 

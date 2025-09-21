@@ -1,119 +1,179 @@
-{% extends "devlog/base.html" %}
-
-{% block title %}KUETx | Server{% endblock %}
-
+{% extends "devlog/base.html" %} {% block title %}KUETx | Server{% endblock %}
 {% block content %}
 <!-- ---------------------- HERO SECTION -------------------------------- -->
 <section class="bg-blue-900 text-white py-20">
   <div class="container mx-auto text-center px-6">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6">Behind KUETx: Our Journey</h1>
-      <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-          Dive into the story of how we built KUETx — a Learning Management System crafted with passion and innovation.
-          Meet our team, explore development insights, check FAQs, view technical documentation, and see how users interact with the platform.
-      </p>
-      <div class="flex justify-center space-x-6">
-          <a href="#team-section" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
-              Meet the Team
-          </a>
-          <a href="https://seagull-production.up.railway.app/api/schema/swagger-ui/" class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition" target="_blank">
-              API Documentation
-          </a>
-      </div>
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+      Behind KUETx: Our Journey
+    </h1>
+    <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+      Dive into the story of how we built KUETx — a Learning Management System
+      crafted with passion and innovation. Meet our team, explore development
+      insights, check FAQs, view technical documentation, and see how users
+      interact with the platform.
+    </p>
+    <div class="flex justify-center space-x-6">
+      <a
+        href="#team-section"
+        class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition"
+      >
+        Meet the Team
+      </a>
+      <a
+        href="https://seagull-production.up.railway.app/api/schema/swagger-ui/"
+        class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition"
+        target="_blank"
+      >
+        API Documentation
+      </a>
+    </div>
   </div>
 </section>
 
 <!-- Project Motivation / Why We Built This -->
 <section id="story" class="bg-white py-12 px-6 md:px-24">
-  <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-blue-500 inline-block">Why We Built This</h2>
+  <h2
+    class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-blue-500 inline-block"
+  >
+    Why We Built This
+  </h2>
   <p class="text-gray-700 leading-relaxed text-lg">
-    As final year students, we often noticed the lack of a centralized platform where learning resources, exams, and mentor guidance could exist in one place.
-    Our LMS aims to bridge that gap — creating a unified space for students and mentors to collaborate, share, and grow academically.
+    As final year students, we often noticed the lack of a centralized platform
+    where learning resources, exams, and mentor guidance could exist in one
+    place. Our LMS aims to bridge that gap — creating a unified space for
+    students and mentors to collaborate, share, and grow academically.
   </p>
 </section>
 
 <!-- System Features -->
 <section class="bg-gray-50 py-10 px-6 md:px-24">
-  <h2 class="text-3xl font-bold text-gray-800 mb-10 border-b-4 border-green-500 inline-block">Core Features at a Glance</h2>
+  <h2
+    class="text-3xl font-bold text-gray-800 mb-10 border-b-4 border-green-500 inline-block"
+  >
+    Core Features at a Glance
+  </h2>
   <div class="grid md:grid-cols-2 gap-6">
     <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
       <h3 class="text-xl font-semibold text-blue-700">📚 Course Management</h3>
-      <p class="text-gray-600">Admins and Instructors can create, organize, and publish course materials with ordered content and type-specific validations.</p>
+      <p class="text-gray-600">
+        Admins and Instructors can create, organize, and publish course
+        materials with ordered content and type-specific validations.
+      </p>
     </div>
     <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
       <h3 class="text-xl font-semibold text-blue-700">📝 Exam System</h3>
-      <p class="text-gray-600">Dynamic exams with scoring, question banks, and result tracking capabilities.</p>
+      <p class="text-gray-600">
+        Dynamic exams with scoring, question banks, and result tracking
+        capabilities.
+      </p>
     </div>
     <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
       <h3 class="text-xl font-semibold text-blue-700">👤 Auth System</h3>
-      <p class="text-gray-600">JWT-based role-specific login and access control for admins, mentors, and students.</p>
+      <p class="text-gray-600">
+        JWT-based role-specific login and access control for admins, mentors,
+        and students.
+      </p>
     </div>
     <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
       <h3 class="text-xl font-semibold text-blue-700">📰 Newsfeed</h3>
-      <p class="text-gray-600">A simple yet effective community board where mentors can post updates and interact with learners.</p>
+      <p class="text-gray-600">
+        A simple yet effective community board where mentors can post updates
+        and interact with learners.
+      </p>
     </div>
   </div>
 </section>
 
-
 <!-- -----------------------------USER JOURNEY ------------------------->
- 
-<section id="user-journey" class="my-20 px-24">  
+
+<section id="user-journey" class="my-20 px-24">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto">
-    
     <!-- Student Journey -->
     <div>
-      <h3 class="text-3xl font-bold text-center text-blue-600 mb-8">Student Journey</h3>
+      <h3 class="text-3xl font-bold text-center text-blue-600 mb-8">
+        Student Journey
+      </h3>
       <div class="relative">
-        <div class="border-l-2 border-blue-500 absolute h-full left-6 top-0"></div>
+        <div
+          class="border-l-2 border-blue-500 absolute h-full left-6 top-0"
+        ></div>
         <div class="space-y-10">
           <!-- Steps -->
           <div class="flex items-start">
-            <div class="relative z-10 bg-blue-500 rounded-full h-6 w-6 mt-1"></div>
+            <div
+              class="relative z-10 bg-blue-500 rounded-full h-6 w-6 mt-1"
+            ></div>
             <div class="ml-6">
               <h4 class="text-xl font-semibold">Visit Website</h4>
-              <p class="text-gray-600">Explore courses, forums, and project details.</p>
+              <p class="text-gray-600">
+                Explore courses, forums, and project details.
+              </p>
             </div>
           </div>
           <div class="flex items-start">
-            <div class="relative z-10 bg-blue-500 rounded-full h-6 w-6 mt-1"></div>
+            <div
+              class="relative z-10 bg-blue-500 rounded-full h-6 w-6 mt-1"
+            ></div>
             <div class="ml-6">
               <h4 class="text-xl font-semibold">Explore Courses & Forum</h4>
-              <p class="text-gray-600">Find discussions, trending courses, and posts.</p>
+              <p class="text-gray-600">
+                Find discussions, trending courses, and posts.
+              </p>
             </div>
           </div>
           <div class="flex items-start">
-            <div class="relative z-10 bg-blue-500 rounded-full h-6 w-6 mt-1"></div>
+            <div
+              class="relative z-10 bg-blue-500 rounded-full h-6 w-6 mt-1"
+            ></div>
             <div class="ml-6">
               <h4 class="text-xl font-semibold">Login / Register</h4>
-              <p class="text-gray-600">Sign up to participate actively and enroll.</p>
+              <p class="text-gray-600">
+                Sign up to participate actively and enroll.
+              </p>
             </div>
           </div>
           <div class="flex items-start">
-            <div class="relative z-10 bg-blue-500 rounded-full h-6 w-6 mt-1"></div>
+            <div
+              class="relative z-10 bg-blue-500 rounded-full h-6 w-6 mt-1"
+            ></div>
             <div class="ml-6">
               <h4 class="text-xl font-semibold">Enroll in Courses</h4>
-              <p class="text-gray-600">Unlock course content and start learning.</p>
+              <p class="text-gray-600">
+                Unlock course content and start learning.
+              </p>
             </div>
           </div>
           <div class="flex items-start">
-            <div class="relative z-10 bg-blue-500 rounded-full h-6 w-6 mt-1"></div>
+            <div
+              class="relative z-10 bg-blue-500 rounded-full h-6 w-6 mt-1"
+            ></div>
             <div class="ml-6">
               <h4 class="text-xl font-semibold">Participate & Post</h4>
-              <p class="text-gray-600">Join quizzes, discussions, and post ideas.</p>
+              <p class="text-gray-600">
+                Join quizzes, discussions, and post ideas.
+              </p>
             </div>
           </div>
           <div class="flex items-start">
-            <div class="relative z-10 bg-blue-500 rounded-full h-6 w-6 mt-1"></div>
+            <div
+              class="relative z-10 bg-blue-500 rounded-full h-6 w-6 mt-1"
+            ></div>
             <div class="ml-6">
               <h4 class="text-xl font-semibold">Rate Courses</h4>
-              <p class="text-gray-600">Leave feedback and reviews on courses.</p>
+              <p class="text-gray-600">
+                Leave feedback and reviews on courses.
+              </p>
             </div>
           </div>
           <div class="flex items-start">
-            <div class="relative z-10 bg-blue-500 rounded-full h-6 w-6 mt-1"></div>
+            <div
+              class="relative z-10 bg-blue-500 rounded-full h-6 w-6 mt-1"
+            ></div>
             <div class="ml-6">
               <h4 class="text-xl font-semibold">Manage Profile</h4>
-              <p class="text-gray-600">Track your learning journey and activities.</p>
+              <p class="text-gray-600">
+                Track your learning journey and activities.
+              </p>
             </div>
           </div>
         </div>
@@ -122,41 +182,63 @@
 
     <!-- Instructor Journey -->
     <div>
-      <h3 class="text-3xl font-bold text-center text-green-600 mb-8">Instructor Journey</h3>
+      <h3 class="text-3xl font-bold text-center text-green-600 mb-8">
+        Instructor Journey
+      </h3>
       <div class="relative">
-        <div class="border-l-2 border-green-500 absolute h-full left-6 top-0"></div>
+        <div
+          class="border-l-2 border-green-500 absolute h-full left-6 top-0"
+        ></div>
         <div class="space-y-10">
           <!-- Steps -->
           <div class="flex items-start">
-            <div class="relative z-10 bg-green-500 rounded-full h-6 w-6 mt-1"></div>
+            <div
+              class="relative z-10 bg-green-500 rounded-full h-6 w-6 mt-1"
+            ></div>
             <div class="ml-6">
               <h4 class="text-xl font-semibold">Login as Instructor</h4>
-              <p class="text-gray-600">Access the instructor dashboard securely.</p>
+              <p class="text-gray-600">
+                Access the instructor dashboard securely.
+              </p>
             </div>
           </div>
           <div class="flex items-start">
-            <div class="relative z-10 bg-green-500 rounded-full h-6 w-6 mt-1"></div>
+            <div
+              class="relative z-10 bg-green-500 rounded-full h-6 w-6 mt-1"
+            ></div>
             <div class="ml-6">
               <h4 class="text-xl font-semibold">Create Courses</h4>
-              <p class="text-gray-600">Build engaging courses with rich content.</p>
+              <p class="text-gray-600">
+                Build engaging courses with rich content.
+              </p>
             </div>
           </div>
           <div class="flex items-start">
-            <div class="relative z-10 bg-green-500 rounded-full h-6 w-6 mt-1"></div>
+            <div
+              class="relative z-10 bg-green-500 rounded-full h-6 w-6 mt-1"
+            ></div>
             <div class="ml-6">
               <h4 class="text-xl font-semibold">Upload Content</h4>
-              <p class="text-gray-600">Upload videos, PDFs, quizzes and notes.</p>
+              <p class="text-gray-600">
+                Upload videos, PDFs, quizzes and notes.
+              </p>
             </div>
           </div>
           <div class="flex items-start">
-            <div class="relative z-10 bg-green-500 rounded-full h-6 w-6 mt-1"></div>
+            <div
+              class="relative z-10 bg-green-500 rounded-full h-6 w-6 mt-1"
+            ></div>
             <div class="ml-6">
               <h4 class="text-xl font-semibold">Engage via Forum</h4>
-              <p class="text-gray-600">Answer questions and lead discussions.</p>
+              <p class="text-gray-600">
+                Answer questions and lead discussions.
+              </p>
             </div>
           </div>
           <div class="flex items-start">
-            <div class="relative z-10 bg-green-500 rounded-full h-6 w-6 mt-1"></div>
+            <div
+              class="relative z-10 bg-green-500 rounded-full h-6 w-6 mt-1"
+            ></div>
             <div class="ml-6">
               <h4 class="text-xl font-semibold">Update Courses</h4>
               <p class="text-gray-600">Refine and improve based on feedback.</p>
@@ -165,202 +247,345 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
-
 <!-- -------------------------------FAQ--------------------------------- -->
 <div id="faq-section" class="max-w-6xl mx-auto py-10">
-  <h1 class="text-4xl font-extrabold text-gray-900 mb-4 text-center">Project FAQ</h1>
+  <h1 class="text-4xl font-extrabold text-gray-900 mb-4 text-center">
+    Project FAQ
+  </h1>
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300">
+    <div
+      class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
+    >
       <h2 class="text-xl font-semibold mb-2">Why Django Rest Framework?</h2>
-      <p class="text-gray-600 text-sm">Django Rest Framework (DRF) offers an easy way to build secure and scalable APIs. It integrates seamlessly with Django's ORM and provides built-in features like authentication and permissions. Compared to Flask or FastAPI, DRF is more feature-rich and well-suited for large projects that need more than just a simple API.</p>
+      <p class="text-gray-600 text-sm">
+        Django Rest Framework (DRF) offers an easy way to build secure and
+        scalable APIs. It integrates seamlessly with Django's ORM and provides
+        built-in features like authentication and permissions. Compared to Flask
+        or FastAPI, DRF is more feature-rich and well-suited for large projects
+        that need more than just a simple API.
+      </p>
     </div>
-  
-    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300">
-        <h2 class="text-xl font-semibold mb-2">Why React.js?</h2>
-        <p class="text-gray-600 text-sm">React.js allows for fast development with its component-based architecture and unidirectional data flow. It’s more flexible and easier to set up compared to Angular or Vue.js, with a vast ecosystem that supports scalability, making it a solid choice for modern web apps.</p>
+
+    <div
+      class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
+    >
+      <h2 class="text-xl font-semibold mb-2">Why React.js?</h2>
+      <p class="text-gray-600 text-sm">
+        React.js allows for fast development with its component-based
+        architecture and unidirectional data flow. It’s more flexible and easier
+        to set up compared to Angular or Vue.js, with a vast ecosystem that
+        supports scalability, making it a solid choice for modern web apps.
+      </p>
     </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300">
-        <h2 class="text-xl font-semibold mb-2">Why PostgreSQL?</h2>
-        <p class="text-gray-600 text-sm">PostgreSQL excels in handling relational data with strong support for ACID compliance, indexing, and complex queries. Unlike MySQL, it’s more reliable for large-scale applications that require robustness and performance, making it a great fit for our backend needs.</p>
+
+    <div
+      class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
+    >
+      <h2 class="text-xl font-semibold mb-2">Why PostgreSQL?</h2>
+      <p class="text-gray-600 text-sm">
+        PostgreSQL excels in handling relational data with strong support for
+        ACID compliance, indexing, and complex queries. Unlike MySQL, it’s more
+        reliable for large-scale applications that require robustness and
+        performance, making it a great fit for our backend needs.
+      </p>
     </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300">
-        <h2 class="text-xl font-semibold mb-2">Why Simple JWT?</h2>
-        <p class="text-gray-600 text-sm">Simple JWT is lightweight and easy to implement for stateless authentication. It provides a scalable solution without the need for server-side sessions, making it more efficient than traditional methods like OAuth2, especially for modern frontend-backend communication.</p>
+
+    <div
+      class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
+    >
+      <h2 class="text-xl font-semibold mb-2">Why Simple JWT?</h2>
+      <p class="text-gray-600 text-sm">
+        Simple JWT is lightweight and easy to implement for stateless
+        authentication. It provides a scalable solution without the need for
+        server-side sessions, making it more efficient than traditional methods
+        like OAuth2, especially for modern frontend-backend communication.
+      </p>
     </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300">
-        <h2 class="text-xl font-semibold mb-2">Why GitHub Actions?</h2>
-        <p class="text-gray-600 text-sm">GitHub Actions allows for seamless CI/CD workflows directly within GitHub, offering easy integration and automation. Unlike Jenkins, it’s simpler to set up and maintains better integration with the repository, streamlining the development process with testing and deployment automation.</p>
+
+    <div
+      class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
+    >
+      <h2 class="text-xl font-semibold mb-2">Why GitHub Actions?</h2>
+      <p class="text-gray-600 text-sm">
+        GitHub Actions allows for seamless CI/CD workflows directly within
+        GitHub, offering easy integration and automation. Unlike Jenkins, it’s
+        simpler to set up and maintains better integration with the repository,
+        streamlining the development process with testing and deployment
+        automation.
+      </p>
     </div>
-    
-    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300">
-        <h2 class="text-xl font-semibold mb-2">Why Railway and Netlify?</h2>
-        <p class="text-gray-600 text-sm">Railway offers easy deployment and scaling for backend services, with a free tier and PostgreSQL support. Netlify is perfect for deploying frontend React apps with automatic CI/CD, making them a cost-effective, developer-friendly choice compared to AWS or Heroku.</p>
+
+    <div
+      class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
+    >
+      <h2 class="text-xl font-semibold mb-2">Why Railway and Netlify?</h2>
+      <p class="text-gray-600 text-sm">
+        Railway offers easy deployment and scaling for backend services, with a
+        free tier and PostgreSQL support. Netlify is perfect for deploying
+        frontend React apps with automatic CI/CD, making them a cost-effective,
+        developer-friendly choice compared to AWS or Heroku.
+      </p>
     </div>
-  
   </div>
-
-</div>  
-
+</div>
 
 <!-- ------------------------ DEVLOG ------------------------ -->
 <div id="devlog" class="max-w-4xl mx-auto py-20 px-4">
-  <h1 class="text-4xl font-bold mb-10 text-center">🛠️ Devlog: How We Built Our LMS</h1>
+  <h1 class="text-4xl font-bold mb-10 text-center">
+    🛠️ Devlog: How We Built Our LMS
+  </h1>
 
   <div class="relative">
-      <div class="border-l-4 border-blue-500 absolute h-full left-5 top-0"></div>
+    <div class="border-l-4 border-blue-500 absolute h-full left-5 top-0"></div>
 
-      <div class="space-y-10 ml-12">
-          <div>
-              <div class="flex items-center space-x-4">
-                  <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
-                  <h5 class="text-xl font-semibold">1. Project Planning & Tech Stack Selection</h5>
-              </div>
-              <p class="mt-2 text-gray-600">Chose Django, React, PostgreSQL, JWT, Railway, Netlify after evaluating project needs.</p>
-          </div>
-
-          <div>
-              <div class="flex items-center space-x-4">
-                  <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
-                  <h5 class="text-xl font-semibold">2. Team Division and Module Assignment</h5>
-              </div>
-              <p class="mt-2 text-gray-600">Distributed responsibilities among team members to work in parallel efficiently.</p>
-          </div>
-
-          <div>
-              <div class="flex items-center space-x-4">
-                  <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
-                  <h5 class="text-xl font-semibold">3. Initial Setup and Repository Organization</h5>
-              </div>
-              <p class="mt-2 text-gray-600">Created GitHub repo, branching strategy (<code>main</code>, <code>development</code>, feature branches).</p>
-          </div>
-
-          <div>
-              <div class="flex items-center space-x-4">
-                  <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
-                  <h5 class="text-xl font-semibold">4. Core System Foundations</h5>
-              </div>
-              <p class="mt-2 text-gray-600">Implemented authentication, migrated database to PostgreSQL, created core models.</p>
-          </div>
-
-          <div>
-              <div class="flex items-center space-x-4">
-                  <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
-                  <h5 class="text-xl font-semibold">5. Feature Development</h5>
-              </div>
-              <p class="mt-2 text-gray-600">Individually developed modules: Courses, Newsfeed, Exams — using modular APIs.</p>
-          </div>
-
-          <div>
-              <div class="flex items-center space-x-4">
-                  <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
-                  <h5 class="text-xl font-semibold">6. Backend and Frontend Integration</h5>
-              </div>
-              <p class="mt-2 text-gray-600">Connected Django REST APIs with React frontend via Axios.</p>
-          </div>
-
-          <div>
-              <div class="flex items-center space-x-4">
-                  <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
-                  <h5 class="text-xl font-semibold">7. Admin Dashboard</h5>
-              </div>
-              <p class="mt-2 text-gray-600">Built an admin dashboard for managing users, contents, and monitoring activities.</p>
-          </div>
-
-          <div>
-              <div class="flex items-center space-x-4">
-                  <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
-                  <h5 class="text-xl font-semibold">8. Code Review and Testing</h5>
-              </div>
-              <p class="mt-2 text-gray-600">Continuous integration with GitHub Actions and SonarCloud analysis for each PR.</p>
-          </div>
-
-          <div>
-              <div class="flex items-center space-x-4">
-                  <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
-                  <h5 class="text-xl font-semibold">9. Deployment Setup</h5>
-              </div>
-              <p class="mt-2 text-gray-600">Configured production settings and deployed backend (Railway) and frontend (Netlify).</p>
-          </div>
-
-          <div>
-              <div class="flex items-center space-x-4">
-                  <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
-                  <h5 class="text-xl font-semibold">10. Final Touches and Launch</h5>
-              </div>
-              <p class="mt-2 text-gray-600">Integrated email verification, conducted final tests, and launched the LMS live.</p>
-          </div>
+    <div class="space-y-10 ml-12">
+      <div>
+        <div class="flex items-center space-x-4">
+          <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+          <h5 class="text-xl font-semibold">
+            1. Project Planning & Tech Stack Selection
+          </h5>
+        </div>
+        <p class="mt-2 text-gray-600">
+          Chose Django, React, PostgreSQL, JWT, Railway, Netlify after
+          evaluating project needs.
+        </p>
       </div>
-  </div>
 
+      <div>
+        <div class="flex items-center space-x-4">
+          <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+          <h5 class="text-xl font-semibold">
+            2. Team Division and Module Assignment
+          </h5>
+        </div>
+        <p class="mt-2 text-gray-600">
+          Distributed responsibilities among team members to work in parallel
+          efficiently.
+        </p>
+      </div>
+
+      <div>
+        <div class="flex items-center space-x-4">
+          <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+          <h5 class="text-xl font-semibold">
+            3. Initial Setup and Repository Organization
+          </h5>
+        </div>
+        <p class="mt-2 text-gray-600">
+          Created GitHub repo, branching strategy (<code>main</code>,
+          <code>development</code>, feature branches).
+        </p>
+      </div>
+
+      <div>
+        <div class="flex items-center space-x-4">
+          <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+          <h5 class="text-xl font-semibold">4. Core System Foundations</h5>
+        </div>
+        <p class="mt-2 text-gray-600">
+          Implemented authentication, migrated database to PostgreSQL, created
+          core models.
+        </p>
+      </div>
+
+      <div>
+        <div class="flex items-center space-x-4">
+          <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+          <h5 class="text-xl font-semibold">5. Feature Development</h5>
+        </div>
+        <p class="mt-2 text-gray-600">
+          Individually developed modules: Courses, Newsfeed, Exams — using
+          modular APIs.
+        </p>
+      </div>
+
+      <div>
+        <div class="flex items-center space-x-4">
+          <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+          <h5 class="text-xl font-semibold">
+            6. Backend and Frontend Integration
+          </h5>
+        </div>
+        <p class="mt-2 text-gray-600">
+          Connected Django REST APIs with React frontend via Axios.
+        </p>
+      </div>
+
+      <div>
+        <div class="flex items-center space-x-4">
+          <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+          <h5 class="text-xl font-semibold">7. Admin Dashboard</h5>
+        </div>
+        <p class="mt-2 text-gray-600">
+          Built an admin dashboard for managing users, contents, and monitoring
+          activities.
+        </p>
+      </div>
+
+      <div>
+        <div class="flex items-center space-x-4">
+          <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+          <h5 class="text-xl font-semibold">8. Code Review and Testing</h5>
+        </div>
+        <p class="mt-2 text-gray-600">
+          Continuous integration with GitHub Actions and SonarCloud analysis for
+          each PR.
+        </p>
+      </div>
+
+      <div>
+        <div class="flex items-center space-x-4">
+          <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+          <h5 class="text-xl font-semibold">9. Deployment Setup</h5>
+        </div>
+        <p class="mt-2 text-gray-600">
+          Configured production settings and deployed backend (Railway) and
+          frontend (Netlify).
+        </p>
+      </div>
+
+      <div>
+        <div class="flex items-center space-x-4">
+          <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+          <h5 class="text-xl font-semibold">10. Final Touches and Launch</h5>
+        </div>
+        <p class="mt-2 text-gray-600">
+          Integrated email verification, conducted final tests, and launched the
+          LMS live.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- ----------------------- CHALLENGES ---------------------- -->
 <section id="challenges" class="bg-gray-50 py-16 px-6 lg:px-24">
   <div class="max-w-6xl mx-auto">
-    <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">Challenges We Faced</h2>
-    <p class="text-lg text-gray-600 text-center mb-12">From bugs to breakthroughs — here's what tested us and how we tackled it.</p>
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">
+      Challenges We Faced
+    </h2>
+    <p class="text-lg text-gray-600 text-center mb-12">
+      From bugs to breakthroughs — here's what tested us and how we tackled it.
+    </p>
 
     <div class="grid md:grid-cols-2 gap-10">
       <!-- Challenge 1 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition border-l-4 border-blue-500">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">🔐 Authentication and Role Management</h3>
-        <p class="text-gray-600 mb-2">Managing secure access for students, instructors, and admins was a challenge in a decoupled architecture.</p>
-        <p class="text-green-700 font-medium">✅ Solved with Simple JWT, custom permission classes, and a unified token strategy.</p>
+      <div
+        class="bg-white p-6 rounded-xl shadow hover:shadow-md transition border-l-4 border-blue-500"
+      >
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+          🔐 Authentication and Role Management
+        </h3>
+        <p class="text-gray-600 mb-2">
+          Managing secure access for students, instructors, and admins was a
+          challenge in a decoupled architecture.
+        </p>
+        <p class="text-green-700 font-medium">
+          ✅ Solved with Simple JWT, custom permission classes, and a unified
+          token strategy.
+        </p>
       </div>
 
       <!-- Challenge 2 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition border-l-4 border-indigo-500">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">🧠 Designing Flexible Course & Content Models</h3>
-        <p class="text-gray-600 mb-2">Supporting diverse content types while preserving structure and sequence took multiple iterations.</p>
-        <p class="text-green-700 font-medium">✅ Solved with ordered content models, content-type validation, and modular architecture.</p>
+      <div
+        class="bg-white p-6 rounded-xl shadow hover:shadow-md transition border-l-4 border-indigo-500"
+      >
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+          🧠 Designing Flexible Course & Content Models
+        </h3>
+        <p class="text-gray-600 mb-2">
+          Supporting diverse content types while preserving structure and
+          sequence took multiple iterations.
+        </p>
+        <p class="text-green-700 font-medium">
+          ✅ Solved with ordered content models, content-type validation, and
+          modular architecture.
+        </p>
       </div>
 
       <!-- Challenge 3 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition border-l-4 border-yellow-500">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">⚙️ GitHub Actions CI Integration</h3>
-        <p class="text-gray-600 mb-2">Setting up CI/CD to run tests, manage migrations, and enforce code quality checks was new to us.</p>
-        <p class="text-green-700 font-medium">✅ Solved by configuring GitHub Actions with PostgreSQL service, Django testing, and SonarCloud analysis.</p>
+      <div
+        class="bg-white p-6 rounded-xl shadow hover:shadow-md transition border-l-4 border-yellow-500"
+      >
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+          ⚙️ GitHub Actions CI Integration
+        </h3>
+        <p class="text-gray-600 mb-2">
+          Setting up CI/CD to run tests, manage migrations, and enforce code
+          quality checks was new to us.
+        </p>
+        <p class="text-green-700 font-medium">
+          ✅ Solved by configuring GitHub Actions with PostgreSQL service,
+          Django testing, and SonarCloud analysis.
+        </p>
       </div>
 
       <!-- Challenge 4 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition border-l-4 border-rose-500">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">🔀 Migration Conflict Management</h3>
-        <p class="text-gray-600 mb-2">Frequent changes from multiple contributors caused migration clashes and broken states.</p>
-        <p class="text-green-700 font-medium">✅ Solved by sequencing migrations carefully, using `--merge`, and improving communication during DB schema changes.</p>
+      <div
+        class="bg-white p-6 rounded-xl shadow hover:shadow-md transition border-l-4 border-rose-500"
+      >
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+          🔀 Migration Conflict Management
+        </h3>
+        <p class="text-gray-600 mb-2">
+          Frequent changes from multiple contributors caused migration clashes
+          and broken states.
+        </p>
+        <p class="text-green-700 font-medium">
+          ✅ Solved by sequencing migrations carefully, using `--merge`, and
+          improving communication during DB schema changes.
+        </p>
       </div>
 
       <!-- Challenge 5 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition border-l-4 border-emerald-500">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">🚀 Deployment Pipeline Complexity</h3>
-        <p class="text-gray-600 mb-2">Coordinating Netlify (frontend) and Render (backend + PostgreSQL) deployment with environment variables was tricky.</p>
-        <p class="text-green-700 font-medium">✅ Solved with environment syncing, PostgreSQL backup scripts, and CORS/debug strategies per environment.</p>
+      <div
+        class="bg-white p-6 rounded-xl shadow hover:shadow-md transition border-l-4 border-emerald-500"
+      >
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+          🚀 Deployment Pipeline Complexity
+        </h3>
+        <p class="text-gray-600 mb-2">
+          Coordinating Netlify (frontend) and Render (backend + PostgreSQL)
+          deployment with environment variables was tricky.
+        </p>
+        <p class="text-green-700 font-medium">
+          ✅ Solved with environment syncing, PostgreSQL backup scripts, and
+          CORS/debug strategies per environment.
+        </p>
       </div>
 
       <!-- Challenge 6: Nested Comments -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition border-l-4 border-teal-500">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">💬 Nested Comment Implementation</h3>
-        <p class="text-gray-600 mb-2">Enabling threaded discussions in posts required handling recursive relationships in an efficient way.</p>
-        <p class="text-green-700 font-medium">✅ Solved using Django MPTT for tree-based comment hierarchy and fast queries.</p>
+      <div
+        class="bg-white p-6 rounded-xl shadow hover:shadow-md transition border-l-4 border-teal-500"
+      >
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+          💬 Nested Comment Implementation
+        </h3>
+        <p class="text-gray-600 mb-2">
+          Enabling threaded discussions in posts required handling recursive
+          relationships in an efficient way.
+        </p>
+        <p class="text-green-700 font-medium">
+          ✅ Solved using Django MPTT for tree-based comment hierarchy and fast
+          queries.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-
-
-
 <!-- Future Scope -->
 <section class="bg-white py-12 px-6 md:px-24">
-  <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-purple-500 inline-block">What’s Next</h2>
+  <h2
+    class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-purple-500 inline-block"
+  >
+    What’s Next
+  </h2>
   <ul class="list-disc ml-6 text-gray-700 text-lg space-y-2">
     <li>Student dashboard for visualizing course progress</li>
     <li>Email notifications and alerts for new content</li>
@@ -373,50 +598,69 @@
 <section id="team-section" class="bg-white py-20 px-4 sm:px-6 lg:px-24">
   <div class="max-w-7xl mx-auto text-center">
     <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Meet Our Team</h2>
-    <p class="text-lg text-gray-600 mb-12">Final year students of ECE, KUET — united by code, driven by purpose.</p>
+    <p class="text-lg text-gray-600 mb-12">
+      Final year students of ECE, KUET — united by code, driven by purpose.
+    </p>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
       <!-- Team Member 1 -->
-      <div class="bg-gradient-to-tr from-indigo-50 via-white to-purple-50 shadow-xl rounded-3xl p-8 hover:shadow-2xl transition transform hover:-translate-y-1 duration-300">
+      <div
+        class="bg-gradient-to-tr from-indigo-50 via-white to-purple-50 shadow-xl rounded-3xl p-8 hover:shadow-2xl transition transform hover:-translate-y-1 duration-300"
+      >
         <div class="flex flex-col items-center">
-          <div class="w-16 h-16 mb-4 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-2xl font-bold shadow-inner">
+          <div
+            class="w-16 h-16 mb-4 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-2xl font-bold shadow-inner"
+          >
             1
           </div>
           <h3 class="text-2xl font-bold text-indigo-700">Imamul Islam Ifti</h3>
           <p class="text-sm text-gray-500 mb-2">Team Leader</p>
-          <p class="text-gray-700 mt-3 italic text-base">"Architecting the backbone — from secure sign-ins to structured learning, one module at a time."</p>
+          <p class="text-gray-700 mt-3 italic text-base">
+            "Architecting the backbone — from secure sign-ins to structured
+            learning, one module at a time."
+          </p>
         </div>
       </div>
 
       <!-- Team Member 2 -->
-      <div class="bg-gradient-to-tr from-green-50 via-white to-yellow-50 shadow-xl rounded-3xl p-8 hover:shadow-2xl transition transform hover:-translate-y-1 duration-300">
+      <div
+        class="bg-gradient-to-tr from-green-50 via-white to-yellow-50 shadow-xl rounded-3xl p-8 hover:shadow-2xl transition transform hover:-translate-y-1 duration-300"
+      >
         <div class="flex flex-col items-center">
-          <div class="w-16 h-16 mb-4 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl font-bold shadow-inner">
+          <div
+            class="w-16 h-16 mb-4 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl font-bold shadow-inner"
+          >
             2
           </div>
           <h3 class="text-2xl font-bold text-green-700">Syed Nazib Sadi</h3>
           <p class="text-sm text-gray-500 mb-2">Developer</p>
-          <p class="text-gray-700 mt-3 italic text-base">"Bringing designs to life and people together — pixel by pixel, post by post."</p>
+          <p class="text-gray-700 mt-3 italic text-base">
+            "Building intelligent discussion platforms — combining scalable
+            backend systems with AI moderation."
+          </p>
         </div>
       </div>
 
       <!-- Team Member 3 -->
-      <div class="bg-gradient-to-tr from-blue-50 via-white to-pink-50 shadow-xl rounded-3xl p-8 hover:shadow-2xl transition transform hover:-translate-y-1 duration-300">
+      <div
+        class="bg-gradient-to-tr from-blue-50 via-white to-pink-50 shadow-xl rounded-3xl p-8 hover:shadow-2xl transition transform hover:-translate-y-1 duration-300"
+      >
         <div class="flex flex-col items-center">
-          <div class="w-16 h-16 mb-4 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold shadow-inner">
+          <div
+            class="w-16 h-16 mb-4 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold shadow-inner"
+          >
             3
           </div>
           <h3 class="text-2xl font-bold text-blue-700">Saif Alvi</h3>
           <p class="text-sm text-gray-500 mb-2">Developer</p>
-          <p class="text-gray-700 mt-3 italic text-base">"Building intuitive flows for complex evaluations — where design meets data."</p>
+          <p class="text-gray-700 mt-3 italic text-base">
+            "Building intuitive flows for complex evaluations — where design
+            meets data."
+          </p>
         </div>
       </div>
     </div>
   </div>
-
 </section>
-
-      
-            
 
 {% endblock %}

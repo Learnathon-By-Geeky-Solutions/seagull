@@ -59,7 +59,7 @@ KUETx is a Learning Management System (LMS) designed to revolutionize the way st
   <img src="https://img.shields.io/badge/Frontend-Live-blue?style=for-the-badge&logo=react" alt="Frontend Live Demo"/>
   </a>
   &nbsp;
-  <a href="https://seagull-production.up.railway.app/" target="_blank">
+  <a href="https://seagull-5adu.onrender.com" target="_blank">
     <img src="https://img.shields.io/badge/Backend-Live-green?style=for-the-badge&logo=django" alt="Backend Live Demo"/>
   </a>
   
@@ -69,17 +69,17 @@ KUETx is a Learning Management System (LMS) designed to revolutionize the way st
 
 Explore our RESTful API with interactive docs powered by drf-spectacular:
 
-[![KUETx](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](https://seagull-production.up.railway.app/api/schema/swagger-ui/)
+[![KUETx](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](https://seagull-5adu.onrender.com/api/schema/swagger-ui/)
 
 ## Team
 
 Meet the passionate developers behind **KUETx**:
 
-| Role      | Name & GitHub Profile                               |
-| --------- | --------------------------------------------------- |
+| Role      | Name & GitHub Profile                                                          |
+| --------- | ------------------------------------------------------------------------------ |
 | Team Lead | <a href="https://github.com/ImamIfti056" target="_blank">Imamul Islam Ifti</a> |
-| Developer | <a href="https://github.com/yuusaif" target="_blank">Saif Alvi</a> |
-| Developer | <a href="https://github.com/SyedSadi" target="_blank">Syed Nazib Sadi</a> |
+| Developer | <a href="https://github.com/yuusaif" target="_blank">Saif Alvi</a>             |
+| Developer | <a href="https://github.com/SyedSadi" target="_blank">Syed Nazib Sadi</a>      |
 
 ### Our Guide & Mentor
 
@@ -96,7 +96,7 @@ A heartfelt appreciation to **[Maahad Mahmud](https://github.com/maahad767)**
   A one-time password (OTP) is generated and shown during enrollment. The user must correctly enter the OTP to enroll in a course.
 
 - **Invoice Download**
-  An invoice pdf file will be downloaded automatically after course enrollment  
+  An invoice pdf file will be downloaded automatically after course enrollment
 
 - **Watch Lessons**  
   Access embedded YouTube videos for engaging, high-quality course content delivered directly in the platform.
@@ -292,6 +292,7 @@ python manage.py migrate
 python manage.py createsuperuser  # follow prompts
 python manage.py runserver
 ```
+
 ### 🔑 Environment Setup
 
 You will need to configure the `.env` files for both the **backend** and **frontend**.
@@ -311,6 +312,7 @@ DB_PASSWORD=your-db-password
 DB_HOST=localhost
 DB_PORT=5432
 ```
+
 #### Frontend (.env) Setup
 
 1. Go to the `frontend` folder.
@@ -322,29 +324,33 @@ VITE_IMGBB_API_KEY=your-api-here
 
 ### Operational Flow
 
-1. **User Authentication**  
+1. **User Authentication**
+
    - Users can sign up or log in using JWT-based authentication.
    - Admins have access to manage users and content.
 
-2. **Browse & Enroll in Courses**  
+2. **Browse & Enroll in Courses**
+
    - Students can explore available courses.
    - They can enroll in courses, view lessons, and participate in quizzes.
 
-3. **Course Management by Instructors**  
+3. **Course Management by Instructors**
+
    - Instructors can create, update, and delete their courses.
    - They can upload lessons, quizzes, and other course materials.
 
-4. **Quiz Participation & Evaluation**  
+4. **Quiz Participation & Evaluation**
+
    - Students take quizzes, which are automatically graded.
    - Quiz results are stored in student profiles.
 
-5. **Discussion Forum**  
+5. **Discussion Forum**
+
    - Students and instructors can create posts, comment, and engage in discussions.
    - Posts are monitored for toxic content using AI (Hugging Face).
 
-6. **Admin Dashboard**  
+6. **Admin Dashboard**
    - Admins can view platform analytics, manage courses, and moderate content.
-
 
 ## Contributing
 
