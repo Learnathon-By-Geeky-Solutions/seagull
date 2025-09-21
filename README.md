@@ -6,8 +6,7 @@
 
 KUETx is a Learning Management System (LMS) designed to revolutionize the way students and instructors interact with educational content. Offering a seamless platform for course browsing, engaging lessons, quizzes, and interactive forums, KUETx brings together the best of technology and education. Whether you're a student eager to learn or an instructor looking to share your knowledge, KUETx provides all the tools to create, manage, and enjoy a rich learning experience.
 
----
-
+## Tech Stack
 
 [![React](https://img.shields.io/badge/REACT-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org)
 [![Vite](https://img.shields.io/badge/VITE-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
@@ -19,8 +18,26 @@ KUETx is a Learning Management System (LMS) designed to revolutionize the way st
 [![Django REST](https://img.shields.io/badge/DJANGO%20REST-092E20?style=for-the-badge&logo=django&logoColor=white)](https://www.django-rest-framework.org)
 [![Hugging Face](https://img.shields.io/badge/HUGGING%20FACE-FF6B00?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co)
 
+## Code Quality
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Learnathon-By-Geeky-Solutions_seagull&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Learnathon-By-Geeky-Solutions_seagull)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Learnathon-By-Geeky-Solutions_seagull&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Learnathon-By-Geeky-Solutions_seagull)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Learnathon-By-Geeky-Solutions_seagull&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=Learnathon-By-Geeky-Solutions_seagull)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Learnathon-By-Geeky-Solutions_seagull&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Learnathon-By-Geeky-Solutions_seagull)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Learnathon-By-Geeky-Solutions_seagull&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Learnathon-By-Geeky-Solutions_seagull)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Learnathon-By-Geeky-Solutions_seagull&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Learnathon-By-Geeky-Solutions_seagull)
+
+## Project Resources
+
+- [Wiki](https://github.com/Learnathon-By-Geeky-Solutions/seagull/wiki) — Full project documentation
+- [Project Board](https://github.com/orgs/Learnathon-By-Geeky-Solutions/projects/112) — Tasks and progress tracking
+- [API Docs](https://seagull-production.up.railway.app/api/schema/swagger-ui/) — API endpoints and usage (replace with actual link)
+- [Report Issues](https://github.com/Learnathon-By-Geeky-Solutions/seagull/issues) — Bug reports and feature requests
+- [Devlog](https://seagull-production.up.railway.app/#devlog) — Track our development journey.
+
 ## Table of Contents
 
+- [Project Resources](#project-resources)
 - [Code Quality](#code-quality)
 - [Live Demo](#live-demo)
 - [API Documentation](#api-documentation)
@@ -34,19 +51,6 @@ KUETx is a Learning Management System (LMS) designed to revolutionize the way st
 - [Operational Flow](#operational-flow)
 - [Contributing](#contributing)
 - [License](#license)
-
-<div>
-
-## Code Quality
-
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Learnathon-By-Geeky-Solutions_seagull&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Learnathon-By-Geeky-Solutions_seagull)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Learnathon-By-Geeky-Solutions_seagull&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Learnathon-By-Geeky-Solutions_seagull)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Learnathon-By-Geeky-Solutions_seagull&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=Learnathon-By-Geeky-Solutions_seagull)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Learnathon-By-Geeky-Solutions_seagull&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Learnathon-By-Geeky-Solutions_seagull)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Learnathon-By-Geeky-Solutions_seagull&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Learnathon-By-Geeky-Solutions_seagull)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Learnathon-By-Geeky-Solutions_seagull&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Learnathon-By-Geeky-Solutions_seagull)
-
-</div>
 
 ## Live Demo
 
@@ -88,14 +92,17 @@ A heartfelt appreciation to **[Maahad Mahmud](https://github.com/maahad767)**
 - **Browse Available Courses**  
   Students can explore and enroll in courses based on topics, discovering relevant learning paths with ease.
 
+- **OTP Verification for Course Enrollment**  
+  A one-time password (OTP) is generated and shown during enrollment. The user must correctly enter the OTP to enroll in a course.
+
+- **Invoice Download**
+  An invoice pdf file will be downloaded automatically after course enrollment  
+
 - **Watch Lessons**  
   Access embedded YouTube videos for engaging, high-quality course content delivered directly in the platform.
 
 - **Download Materials**  
   Get access to PDFs and supplementary resources for offline learning, enhancing study flexibility.
-
-- **Attempt Quizzes**  
-  Participate in course quizzes with instant feedback and scoring to reinforce learning and track progress.
 
 - **Instructor Course Management**  
   Instructors can create, update, and delete their courses, tailoring content to meet student needs.

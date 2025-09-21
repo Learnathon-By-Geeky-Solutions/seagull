@@ -46,7 +46,6 @@ class TestCourseDetailView:
         assert response.data['title'] == course.title
         assert response.data['description'] == course.description
         assert response.data['subject'] == course.subject
-        print(response.data)
         created_by = response.data['created_by_details']
         assert created_by['id'] == instructor.id
         assert created_by['name'] == 'instructor1'

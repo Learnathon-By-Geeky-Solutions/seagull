@@ -29,7 +29,6 @@ export default function InstructorProfile() {
   if (!instructor) return <div className="flex justify-center items-center h-screen">
         <FaSpinner className="animate-spin text-4xl" />
     </div>
-  console.log(instructor)
   return (
     <div className="max-w-5xl mx-auto mt-10 p-6 bg-base-100 rounded-box shadow-md">
       {/* Instructor Info */}

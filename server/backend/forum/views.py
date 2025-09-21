@@ -21,12 +21,10 @@ PERMISSION_DENIED_MESSAGE = "Permission Denied"
 
 # Utility function to block toxic content
 def block_if_toxic(content):
-    print("Checking content for toxicity:", content)
     if not content:
         return
 
     toxic_response = detect_toxic_content(content)
-    print("Model response:", toxic_response)  # DEBUG
 
     label, score = extract_top_label_and_score(toxic_response)
 
@@ -37,7 +35,6 @@ def block_if_toxic(content):
 # Extract the most confident label and its score
 def extract_top_label_and_score(response):
     if not isinstance(response, list) or not response:
-        print("Unexpected response format:", response)
         return None, 0
 
     # Check for double nesting (some models wrap the output in another list)
@@ -48,7 +45,6 @@ def extract_top_label_and_score(response):
     top = max(response, key=lambda x: x.get('score', 0))
     label = top.get('label')
     score = top.get('score', 0)
-    print(f"Top label: {label}, Score: {score}")  # DEBUG
     return label, score
 
 

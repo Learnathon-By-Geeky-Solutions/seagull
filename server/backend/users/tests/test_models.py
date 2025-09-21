@@ -7,8 +7,6 @@ class TestUserModels:
 
     def test_create_student_user(self):
         user = User.objects.create_user(username='student1', password=config("TEST_PASSWORD"), role='student')
-        print('user id', user.id)
-        print("\nNumber of users in database:", User.objects.count())        
         student = Student.objects.get(user=user)        
         student.course_completed = 2
         student.course_enrolled = 5
@@ -22,8 +20,6 @@ class TestUserModels:
 
     def test_create_instructor_user(self):
         user = User.objects.create_user(username='instructor1', password=config("TEST_PASSWORD"), role='instructor')
-        print('user id', user.id)
-        print("\nNumber of users in database:", User.objects.count())        
         instructor = Instructor.objects.get(user=user)        
         instructor.designation = 'Professor'
         instructor.university = 'University of Science'

@@ -41,7 +41,6 @@ class IsAdminOrInstructorOwner(APIView):
         # Instructors: can only modify their OWN course/content
         if hasattr(request.user, 'instructor'):
             if isinstance(obj, Course):
-                print('dsfaf', obj, request)
                 return obj.created_by.user == request.user
 
             if isinstance(obj, CourseContents):

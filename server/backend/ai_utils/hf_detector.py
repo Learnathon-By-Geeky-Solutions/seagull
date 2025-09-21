@@ -21,7 +21,6 @@ def detect_toxic_content(text):
     response = requests.post(API_URL, headers=HEADERS, json=payload)
 
     if response.status_code != 200:
-        print("HuggingFace API error:", response.status_code, response.text)
         return {"error": f"{response.status_code}: {response.text}"}
 
     return response.json()
